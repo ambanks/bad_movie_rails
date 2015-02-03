@@ -1,4 +1,118 @@
-/*
+body{padding-top:20px;}
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+.carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}
+
+.modal.modal-wide .modal-dialog {
+  width: 80%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+/* irrelevant styling */
+/*body { text-align: center; }
+body p { 
+  max-width: 400px; 
+  margin: 20px auto; 
+}*/
+
+#tallModal .modal-body p { margin-bottom: 900px 
+}
+
+#scorePanel .meter .meter-value {
+font-size: 36px;
+font-weight: bold;
+margin-left: 5px;
+margin-right: -10px;
+}
+
+p {
+  font-family: "Harriet Text",Georgia,Times,"Times New Roman",sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-size: 20px;
+}
+
+h1 {
+  font-family: "Harriet Text",Georgia,Times,"Times New Roman",sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-size: 100px;
+      text-align: center;
+}
+
+h2 {
+  font-family: "Harriet Text",Georgia,Times,"Times New Roman",sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-weight: bold;
+      font-size: 30px;
+}
+
+h3  {
+  font-family: "Harriet Text",Georgia,Times,"Times New Roman",sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-weight: bold;
+      font-size: 25px;
+}
+
+hr  {
+width: 100%;
+height: 8px;
+background-color:#FF0066;
+color:#FF0066;
+border: 0 none;
+margin: 5px auto;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 20px 60px;
+  font-size: 22px;
+  line-height: normal;
+  border-radius: 8px;
+}
+
+.btn > a {
+    color:white;
+}
+body {
+background: url("http://fc08.deviantart.net/fs70/i/2012/160/e/f/film_negative_3_by_struckdumb-d2xs3h9.jpg") no-repeat center center fixed;
+-webkit-background-size: 75% auto;
+-moz-background-size: 75% auto;
+-o-background-size: 75% auto;
+ background-size: 75% auto;
+ }/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *

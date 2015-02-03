@@ -1,14 +1,81 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>BadMoviesAppRails</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="js/jquery.js" type="text/javascript"></script>   
+    <script src="js/bootstrap.js" type="text/javascript"></script>  
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  </head>
 
-<%= yield %>
+  <body>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">HDTGM<href="#">
+     </a>
+    </div>
 
-</body>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="/about">About Podcast</a></li>
+        <li class="dropdown">
+          <a href="/movies" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bad Movies <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href='/tango'>Tango & Cash</a></li>
+            <li><a href='/xanadu'>Xanadu</a></li>
+            <li><a href='/monkey_shines'>Monkey Shines</a></li>
+            <li><a href='/glitter'>Glitter</a></li>
+            <li><a href='/staying_alive'>Staying Alive</a></li>
+            <li><a href='/ernest_goes_to_jail'>Ernest Goes to Jail</a></li>
+            <li><a href='/sharknado'>Sharknado</a></li>
+            <li><a href='/howard_the_duck'>Howard the Duck</a></li>
+            <li><a href='/mr_nanny'>Mr. Nanny</a></li>
+            <li><a href='/i_know_who_killed_me'>I Know Who Killed Me</a></li>
+            <li><a href='/sleepaway_camp'>Sleepaway Camp</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+      </ul>
+   <!--    <form class="navbar-form navbar-left" role="search"> -->
+    <!--     <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button> -->
+     <!--  </form> -->
+      <ul class="nav navbar-nav navbar-right">
+   <!--  <div class="form-group" align="center">
+          <input type="text" class="form-control" placeholder="Search">
+        </div> -->
+      <!--   <button type="submit" class="btn btn-default">Submit</button> -->
+            <a href="https://www.facebook.com/HDTGM"><img src="../images/facebook-gray.png" alt="Facebook" width="30" height="30"></a>
+            <a href="http://www.twitter.com/hdtgm"><img src="../images/twitter-gray.png" alt="Twitter" width="30" height="30"></a>
+            <a href="http://rss.earwolf.com/how-did-this-get-made"><img src="../images/rss-gray.png" alt="Subscribe - RSS Feed" width="30" height="30"></a>
+          </div>
+  </div><!-- /.container-fluid -->
+</nav>
+    <section class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <!-- <div class="jumbotron"> -->
+   <!--    </div> -->
+
+    </section>
+<!--     <section class="container"> -->
+      <%= yield %>
+    </section>
+
+    <!-- Bootstrap JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
 </html>

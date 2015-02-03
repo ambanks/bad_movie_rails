@@ -1,4 +1,33 @@
 Rails.application.routes.draw do
+
+  root 'static_pages#home'
+
+  get '/about', to: 'static_pages#about'
+
+  get '/movies', to: 'static_pages#movies'
+
+  get '/tango', to: 'static_pages#tango'
+
+  get '/xanadu', to: 'static_pages#xanadu'
+
+  get '/monkey_shines', to: 'static_pages#monkey_shines'
+
+  get '/glitter', to: 'static_pages#glitter'
+
+  get '/staying_alive', to: 'static_pages#staying_alive'
+
+  get '/ernest_goes_to_jail', to: 'static_pages#earnest_goes_to_jail'
+
+  get '/sharknado', to: 'static_pages#sharknado'
+
+  get '/howard_the_duck', to: 'static_pages#howard_the_duck'
+
+  get '/mr_nanny', to: 'static_pages#mr_nanny'
+
+  get '/i_know_who_killed_me', to: 'static_pages#i_know_who_killed_me'
+
+  get '/sleepaway_camp', to: 'static_pages#sleepaway_camp'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
